@@ -8,7 +8,7 @@ body{
 }
 
 .icon-bar {
-  width: 90px;
+  width: 100px;
   height: 652px;
   background-color: rgb(114, 202, 120);
 }
@@ -31,6 +31,15 @@ header{
     padding: 5px;
     background: rgb(244, 243, 243);
     
+}
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  text-align: center;
+  display: block;
+  color: white;
 }
 header h3{
   padding: 10px 150px;
