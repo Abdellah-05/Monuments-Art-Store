@@ -47,4 +47,95 @@ header h3{
 header p{
   padding: 0px 150px;
 }
+.login{
+  width: 30%;
+  margin-left: 40px;
+  height: 420px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 25px 15px rgba(253, 255, 253, 0.518);
+  margin-top: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.login i{
+  display: block;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 25px;
+  transition: all 0.3s ease;
+  color:#0f5d0cda;
+  font-size: 28px;
+}
+.login h4{
+  color: #139e0eda;
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: x-large;
+}
+form{
+  padding-top: 20px;
+}
+form label{
+  font-size: large;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #0fad0ada;
+  margin-left: 8px;
+}
+form input{
+  width: 78%;
+  border: 3px solid rgba(231, 220, 220, 0.938);
+  height: 41px;
+  border: hidden;
+  border-bottom: 2px solid #0fad0ada;
+}
+form input:focus {
+  outline: none;
+}
+form #mail{
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 25px;
+  z-index: 3;
+  position: absolute;
+  top: 32%;
+  left: 59.5%;
+  color: rgba(134, 123, 123, 0.788);
+}
+form #pwd{
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 25px;
+  z-index: 3;
+  position: absolute;
+  top: 44%;
+  left: 59.5%;
+  color: rgba(134, 123, 123, 0.788);
+}
+.add2{
+  background-color: #0fad0ada;
+  border: 3px solid #0fad0ada;
+  color: white;
+  font-weight: bold;
+}
+.add {
+  margin-top: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: #0fad0ada;
+  border: 3px solid #0fad0ada;
+  color: white;
+  font-weight: bold;
+}
 
+.show {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-weight: bold;
+}
