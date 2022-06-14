@@ -24,7 +24,6 @@ $(document).ready(function() {
     $.ajax({
 		url: "../backEnd/getData.php",
 		type: "POST",
-		cache: false,
 		success: function(data){
 			$('#showUser').html(data); 
 		}
