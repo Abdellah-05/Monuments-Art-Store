@@ -28,3 +28,14 @@ $(document).ready(function() {
 			$('#showUser').html(data); 
 		}
 	});
+
+    $(document).ready(function() {
+
+    $.ajax({
+        url: "../backEnd/getDataMonuments.php",
+        type: "POST",
+        success: function(data){
+            $('#showMonuments').html(data); 
+        }
+    });
+});
