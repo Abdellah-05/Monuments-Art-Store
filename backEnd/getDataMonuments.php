@@ -6,9 +6,39 @@ $sql = "SELECT * FROM monuments";
 $result = $conn->query($sql);
 
 ?>
-                    <div class="col-sm-4" style="border-radius: 8px; margin-top: 25px; height: 300px; ">                               
-                        <div class="card" style=" padding: 0; margin: 0; width: 100%; height: 100%;" >
-                            
+                    <div id="add" class="col-sm-4" style="border-radius: 8px; margin-top: 25px; height: 300px;">                               
+                        <div class="card" style=" padding: 0; margin: 0; width: 100%; height: 100%; background-color: green;" >
+                            <button onclick="myFunction()" class="btn" style="width:100%; height:100%;"><i style="font-size:150px; color:white;" class="fa-solid fa-circle-plus"></i></button>
+                        </div>                
+                    </div>
+
+                    <div id="addN" class="col-sm-4" style="display:none; border-radius: 8px; margin-top: 25px; height: 300px;">                               
+                        <div class="card" style=" padding: 0; margin: 0; width: 100%; height: 100%; " >
+                            <form method="post">
+                                <div class="form-group">
+                                    <input type="text" name="title" id="title" style="width:180px; height:30px; margin-left: 10px;" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="place" id="place" style="width:180px; height:30px; margin-left: 10px; margin-top:10px;" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter place">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="description" id="description" style="width:390px; height:100px; margin-left: 10px; margin-top:10px; resize: none;"  class="form-control" id="exampleFormControlTextarea1"  placeholder="Enter description" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input name="image" id="image" type="file" style="width:310px; height:35px; margin-left: 10px; margin-top:10px;" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter image">
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input name="price" id="price" style="width:100px; height:30px; margin-left: 10px; margin-top:10px;" type="text" class="form-control" placeholder="Enter price">
+                                    </div>
+                                    <div class="col">
+                                        <input name="copie" id="copie" style="width:105px; height:30px; margin-left: 10px; margin-top:10px;" type="text" class="form-control" placeholder="Enter copie">
+                                    </div>
+                                    <div class="col">
+                                        <button style="width:60px; margin-left: 50px; margin-top:10px;"  id="butsave"  class="btn btn-outline-success btn-sm">Save</button>                                    
+                                    </div>
+                                </div>
+                            </form>
                         </div>                
                     </div>
 
@@ -18,10 +48,10 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     
 ?>
-                    <div class="col-sm-4" style="border-radius: 8px; margin-top: 25px; height: 300px; ">                               
+                    <div  class="col-sm-4" style="border-radius: 8px; margin-top: 25px; height: 300px; ">                               
                         <div class="card" style=" padding: 0; margin: 0; width: 100%; height: 100%;" >
                             <img class="card-img-top" src="Images/1.jpg" alt="Card image" style="width: 100%; height: 100%;">
-                            <div class="card-img-overlay" >
+                            <div onmouseover="showImg(this)" onmouseout="hideImg(this)"  class="card-img-overlay" >
                                 <div class="card-header" style="display: flex; flex-wrap: wrap; color: white; font-weight: bold;">
                                     <div class="title" style=" width: 70%;"><?=$row['title'];?></div>
                                     <div class="bottons" style=" width: 30%; margin-top: -64px; margin-left: 257px; z-index: 10;">

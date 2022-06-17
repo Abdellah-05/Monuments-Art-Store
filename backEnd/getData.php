@@ -10,7 +10,7 @@ $result = $conn->query($sql);
                         <div class="text-center">
                             <button class="add rounded-circle btn btn-success"><span style="font-size: 30px; ">+</span></button>
                         </div>
-                        <form  id="fupForm" method="POST" name="form!">
+                        <form>
                             <div class="text-center">
                                 <input type="text"  placeholder="Nom" name="nom" id="nom">
                                 <i style="margin-top: -95px; margin-left: 70%; color: gray;" class="fa-solid fa-keyboard" aria-hidden="true"></i>
@@ -21,7 +21,7 @@ $result = $conn->query($sql);
                                 <br>
                             </div>
                             <div class="text-center">
-                                <button class="add2 btn btn-success" name="save" id="butsave">Ajouter</button>
+                                <button class="add2 btn btn-success" id="butsave">Ajouter</button>
                             </div>
                         </form>
                     </div>
