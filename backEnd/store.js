@@ -6,6 +6,8 @@
         }
     });
 
+
+
     function myFunction() {
         var x = document.getElementById("add");
         var y = document.getElementById("addN");
@@ -17,6 +19,8 @@
             x.style.display = "none";
         }
         $(document).ready(function() {
+
+
             $('#butsave').on('click', function() {
                 var title = $('#title').val();
                 var place = $('#place').val();
@@ -45,15 +49,20 @@
             });
       }
 
-      function showImg(x) {
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else{
+
+      function myFunction2() {
+        var x = document.getElementById("addNew");
+        var y = document.getElementById("addNew2");
+        if (y.style.display === "none") {
+            y.style.display = "block";
             x.style.display = "none";
-        }
-      }
+        } 
+    }
+
+    //   function showImg(x) {
+    //     x.style.display = "block";
+    //   }
       
-      function hideImg(x) {
-        x.style.display = "block";
-        
-      }
+    //   function hideImg(x) {
+    //     x.style.display = "block";
+    //   }
